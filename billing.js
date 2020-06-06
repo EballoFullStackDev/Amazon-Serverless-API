@@ -7,7 +7,6 @@ export async function main(event, context) {
   const amount = calculateCost(storage);
   const description = "Scratch charge";
 
-  // Load our secret key from the  environment variables
   const stripe = stripePackage(process.env.stripeSecretKey);
 
   try {
